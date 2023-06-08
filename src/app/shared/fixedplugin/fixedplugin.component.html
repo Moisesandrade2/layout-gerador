@@ -1,0 +1,27 @@
+<div class="fixed-plugin">
+  <div class="show-dropdown" ngbDropdown>
+    <a href="javascript:void(0)" ngbDropdownToggle id="dropdownConfig">
+      <i class="fa fa-cog fa-2x"> </i>
+    </a>
+    <ul class="" ngbDropdownMenu aria-labelledby="dropdownConfig">
+      <li class="header-title">Menu Lateral</li>
+      <li class="adjustments-line text-center">
+        <a href="javascript:void(0)" class="switch-trigger background-color">
+          <span class="badge filter badge-light" [ngClass]="{'active': sidebarColor === 'white'}" (click)="changeSidebarColor('white')"></span>
+          <span class="badge filter badge-dark" [ngClass]="{'active': sidebarColor === 'black'}" (click)="changeSidebarColor('black')"></span>
+        </a>
+      </li>
+
+      <li class="header-title">Tela Principal</li>
+      <li class="adjustments-line text-center">
+        <a href="javascript:void(0)" class="switch-trigger main-panel-color">
+          <span class="badge filter badge-light" [ngClass]="{'active': mainPanelColor === 'white'}" (click)="changeMainPanelColor('white')"></span>
+          <span class="badge filter" style="background-color: #343a40" [ngClass]="{'active': mainPanelColor === '#343a40'}" (click)="changeMainPanelColor('#343a40')"></span>
+          <span class="badge filter" style="background-color: #1c1c1c" [ngClass]="{'active': mainPanelColor === '#1c1c1c'}" (click)="changeMainPanelColor('#1c1c1c')"></span>
+          <span class="badge filter" style="background-color: #010b15" [ngClass]="{'active': mainPanelColor === '#010b15'}" (click)="changeMainPanelColor('#010b15')"></span>
+          <span class="badge filter badge-dark" [ngClass]="{'active': mainPanelColor === 'black'}" (click)="changeMainPanelColor('black')"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
